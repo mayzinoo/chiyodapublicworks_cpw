@@ -1,0 +1,33 @@
+name = rendezvous
+description = Rendezvous Travel v1.0.
+core = 7.x
+engine = phptemplate
+version = 1.0
+
+; Call style sheets.
+stylesheets[all][] = css/imports.css
+
+; Call JavaScript libraries.
+scripts[] = js/wow.js
+scripts[] = js/bootstrap.min.js
+
+
+; Define Header block regions.
+regions[header_language] = Header Language
+regions[menu] = Header Menu
+
+; Define content block regions.
+regions[before_content_no_wrapper] = Before Content No Wrapper
+regions[before_content] = Before Content
+regions[content] = Content
+regions[sidebar_left] = Left Sidebar
+regions[sidebar_right] = Right Sidebar
+regions[after_content] = After Content
+regions[after_content_wrapper] = After Content Wrapper
+regions[after_content_no_wrapper] = After Content No Wrapper
+
+; Define Footer block regions.
+regions[footer_top] = Footer Top
+regions[footer_left] = Footer Left
+regions[footer_right] = Footer Right
+regions[footer_bottom] = Footer Bottom

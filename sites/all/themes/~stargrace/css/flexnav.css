@@ -1,0 +1,296 @@
+body{
+	background:#333;
+}
+.fm-button{
+      right: 0;
+      display: none;
+      box-sizing: border-box;
+      margin: 0;
+      width: 55px;
+      padding: 17px 16px 16px 16px;
+      position: fixed;
+      z-index: 99;
+      background:rgba(57, 57, 57, 0.96);
+}
+
+.fm-button:hover{
+  cursor: pointer;
+}
+
+.fm-button:hover .fm-bar{
+  background-color: #fff;
+}
+
+.fm-button:active .fm-bar{
+  background-color: #0073BF;
+}
+
+.fm-button .fm-bar{
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+
+
+
+.fm-button .fm-bar +.fm-bar{
+  margin-top: 4px;
+}
+
+.flexmenu:before,.flexmenu:after{
+  display: table;
+  content: " ";
+}
+
+.flexmenu:after{
+  clear: both;
+}
+
+.flexmenu a{
+  text-decoration: none;
+}
+
+.flexmenu.fm-toggle.fm-sm{
+  display: none;
+}
+
+.fm-outer{
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+}
+
+.fm-inner{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  right: 0;
+}
+
+.fm-inner.open{
+  right: -300px;
+}
+
+.fm-inner.open .flexmenu.fm-sm{
+  right: 0;
+}
+
+.flexmenu.fm-offcanvas.fm-sm{
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  margin-top: 50px;
+  background: rgba(57, 57, 57, 0.96);
+}
+
+.flexmenu.fm-lg{
+  max-width: 1170px;
+  margin: auto;
+}
+
+
+
+.flexmenu.fm-lg > ul > li{
+  float: left;
+}
+.flexmenu.fm-lg > ul > li.active > a{
+background: #00a8e0;
+}
+.flexmenu.fm-lg ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flexmenu.fm-lg li{
+  position: relative;
+  white-space: nowrap;
+}
+
+.flexmenu.fm-lg li ul{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 99;
+}
+
+.flexmenu.fm-lg li ul .navicon{
+  border: 4px solid transparent;
+  border-left-color: #666;
+  right: 10px;
+  top: 23px;
+}
+
+header.smaller .flexmenu.fm-lg li ul .navicon{
+    top: 23px;
+}
+
+.flexmenu.fm-lg li ul ul{
+  top: 0;
+  left: 100%;
+}
+
+.flexmenu.fm-lg > ul > li{
+  padding: 0;
+}
+
+/*Desktop Menu*/
+.flexmenu.fm-lg a{
+  display: block;
+  padding: 30px 8px;
+  color: #fff;
+  font-size:13px;
+  text-transform:uppercase;
+  
+}
+.flexmenu.fm-lg .navicon{
+  background: url(../images/menu-arrow-down.png) no-repeat;
+  content: " ";
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 12px;
+  height: 6px;
+}
+
+header.smaller .flexmenu.fm-lg .navicon{
+  top: 15px;
+}
+
+
+.flexmenu.fm-lg > ul > li.with-ul a{
+  padding-right: 5px;
+}
+
+.flexmenu.fm-lg ul li:hover > a {
+  background: #0fa240;
+}
+
+
+.flexmenu.fm-lg ul li ul li:hover > a{
+  background: #fff;
+}
+
+.flexmenu.fm-lg li ul{
+  margin: 0;
+  background-color: #f5f5f5;
+  border-bottom: 4px solid #FF3000;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+}
+
+.flexmenu.fm-lg li ul li{
+  padding: 0;
+  min-width: 200px;
+  width: 250px;
+}
+
+.flexmenu.fm-lg li ul a{
+  font-size: 13px;
+  border-top: 1px solid #e1e1e1;
+  padding: 15px 25px;
+  color: #21282e;
+  display: block;
+  background: transparent;
+}
+header.smaller .flexmenu.fm-lg li ul a{
+  padding: 15px 25px;
+}
+
+.flexmenu.fm-lg li ul a:hover{
+  color: #21282e;
+  display: block;
+  background-color: #fff;
+}
+
+.flexmenu.fm-sm ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flexmenu.fm-sm ul li{
+  position: relative;
+}
+
+.flexmenu.fm-sm ul li a{
+  display: block;
+  padding: 12px 15px;
+  font-size: 13px;
+    font-weight:normal;
+  color: #fff;
+	text-transform:uppercase;
+}
+
+.flexmenu.fm-sm ul li a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.flexmenu.fm-sm > ul > li.active > a{
+  background-color: #00ACE7;
+}
+
+.flexmenu.fm-sm ul li a{
+border-bottom: 1px solid  #eaeaea;
+}
+
+.flexmenu.fm-sm ul li a{
+  border-left: 4px solid transparent;
+}
+
+.flexmenu.fm-sm ul li a:hover,.flexmenu.fm-sm ul li a.active{
+  background-color: #0fa240;
+  border-left: 4px solid #bce23c;
+}
+
+.flexmenu.fm-sm ul ul li a{
+border-bottom: 1px solid  rgba(255, 255, 255, .1);
+}
+
+.flexmenu.fm-sm ul ul li a{
+  background-color: #004969;
+  padding-left: 40px;
+}
+
+.flexmenu.fm-sm ul ul li a:hover,.flexmenu.fm-sm ul ul li a.active{
+  background-color: #00202E;
+}
+
+.flexmenu.fm-sm ul ul li ul li{
+/*margin-top: 1px;*/
+}
+
+.flexmenu.fm-sm ul ul li ul li a{
+  background-color: #021F2C;
+}
+
+.flexmenu.fm-sm ul ul li ul li a:hover,.flexmenu.fm-sm ul ul li ul li a.active{
+  background-color: #077ab0;
+}
+
+.flexmenu.fm-sm .navicon{
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: url('../images/arrow-wht-down.png') 6px 7px no-repeat #0099DA ;
+}
+
+.flexmenu.fm-sm .navicon:hover{
+  cursor: pointer;
+  background-color: #004969;
+}
+
+.flexmenu.fm-sm .navicon:after{
+  background: url('../images/arrow-wht-down.png') no-repeat ;
+}

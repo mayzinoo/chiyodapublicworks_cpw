@@ -1,0 +1,33 @@
+name = Star Grace Myanmar
+description =  Star Grace Myanmar v1.0.
+core = 7.x
+engine = phptemplate
+version = 1.0
+
+; Call style sheets.
+stylesheets[all][] = css/imports.css
+
+; Call JavaScript libraries.
+scripts[] = js/wow.js
+scripts[] = js/bootstrap.min.js
+
+
+; Define Header block regions.
+regions[header_language] = Header Language
+regions[menu] = Header Menu
+
+; Define content block regions.
+regions[before_content_no_wrapper] = Before Content No Wrapper
+regions[before_content] = Before Content
+regions[content] = Content
+regions[sidebar_left] = Left Sidebar
+regions[sidebar_right] = Right Sidebar
+regions[after_content] = After Content
+regions[after_content_two] = After Content Two
+
+; Define Footer block regions.
+regions[footer_top_left] = Footer Top Left
+regions[footer_top_middle] = Footer Top Middle
+regions[footer_top_right] = Footer Top Right
+regions[footer_bottom_left] = Footer Bottm Left
+regions[footer_bottom_right] = Footer Bottom Right

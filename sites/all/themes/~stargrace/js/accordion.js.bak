@@ -1,0 +1,19 @@
+$(function(){
+			var thisChild2 = "";
+			$(".name").click(function()
+			{
+				$(".name").children(".discription").slideUp();
+				var thisChild = $(this).parents(".name").children(".discription").html() ;
+				if(thisChild!=thisChild2 )
+			{
+				$(this).parents(".name").children(".discription").slideDown();
+				thisChild2 = thisChild ;
+			}
+			
+			else
+				{
+				thisChild2 = "" ;
+				}		return false;
+				});
+					$(".name .discription").hide();
+						});
